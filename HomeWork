@@ -1,0 +1,26 @@
+        String HomeTaskSkr    = 'For this lesson we are using simple String methods.On the next lesson split()and replace methods will be explained and shown.Please try to research them at home too additionally';
+        Integer n = HomeTaskSkr.Length()/3;                     // Make an integer to divided on 3.
+        string str1           = HomeTaskSkr.substring(0,n);     // Start our string from ZERO to n which is 59 symbol of our string.
+        string str2           = HomeTaskSkr.substring(n,n+n);   // Start the second line of our string from 59 and to 118 symbol.
+        string str3           = HomeTaskSkr.substring(n+n,HomeTaskSkr.Length()); // Start from 118 symbol to 177.
+        String MethodSplit    = 'Split';
+        String MethodRaplace  = 'Raplace';
+        String ConcatMethods  = 'On the next lesson we will lern 2 Methods: ' + MethodSplit + ' and ' + MethodRaplace;
+        Integer randomNumber1 = Integer.valueof((Math.random() * 100));
+        Integer randomNumber2 = Integer.valueof((Math.random() * 100));
+        Integer randomNumber3 = Integer.valueof((Math.random() * 100));
+        String sInteger1      = String.valueOf(randomNumber1);  // We translate our Integer to String
+        String sInteger2      = String.valueOf(randomNumber2);  // We translate our Integer to String
+        String sInteger3      = String.valueOf(randomNumber3);  // We translate our Integer to String
+        String ConcatVariables = 'The first variable is: ' + sInteger1 + ' The Second variable is: ' + sInteger2 + ' First variable is: ' + sInteger3; 
+            System.debug(HomeTaskSkr.Length());                 // Full length of the String equals 177.
+            System.debug(ConcatVariables);
+            System.debug(str1);
+            System.debug(str2);
+            System.debug(str3);
+            System.debug(ConcatMethods);
+}
+    
+       
+  
+   
