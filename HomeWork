@@ -1,4 +1,5 @@
         String HomeTaskSkr    = 'For this lesson we are using simple String methods.On the next lesson split()and replace methods will be explained and shown.Please try to research them at home too additionally';
+        {
         Integer n = HomeTaskSkr.Length()/3;                     // Make an integer to divided on 3.
         string str1           = HomeTaskSkr.substring(0,n);     // Start our string from ZERO to n which is 59 symbol of our string.
         string str2           = HomeTaskSkr.substring(n,n+n);   // Start the second line of our string from 59 and to 118 symbol.
