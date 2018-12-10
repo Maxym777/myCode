@@ -1,0 +1,15 @@
+
+String s21 = 'field1=Test';
+String s22 = 'field2=Test2';
+String s23 = 'field3=Test3';
+String ConcatSomeOf = s21 + ',' +s22 + ',' + s23;
+ List<String> Splitted = ConcatSomeOf.split(',');
+     for(String ItemsStr : Splitted){
+String glen = ItemsStr.substring(ItemsStr.IndexOf('=')+1, ItemsStr.length());
+ List<Account> ListOfAccToInsert = new List<Account>();
+    Account accForTest = new Account(Name = glen);
+    listOfAccToInsert.add(accForTest);
+    insert listOfAccToInsert;
+    system.debug(listOfAccToInsert);
+    system.debug(glen);
+    }
