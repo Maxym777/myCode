@@ -1,0 +1,17 @@
+List<String> listOfIntegers = new List<String>{'1','2','3','4','5','6'};
+  Set<Integer> setOfIntegers = new Set<Integer>{1,2,3};
+      List<Integer> integerList = new List<Integer>();
+    for(String s : listOfIntegers)
+		{
+    integerList.add(Integer.valueOf(s));
+        }
+      for(Integer itemInteger : integerList) {
+          if(integerList.contains(itemInteger)) 
+              System.debug('Сет имеет значение : ' + itemInteger);
+      
+if(setOfIntegers.contains(itemInteger) && itemInteger < integerList.size()) {
+        System.debug('Элемент листа входит в список сета!');
+    } else {
+    	System.debug('Элемент не входит в лист : ' + itemInteger);
+    }     
+      }
