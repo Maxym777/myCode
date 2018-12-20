@@ -1,33 +1,37 @@
   List <String>  listOfIntegers = new List<String>  {'2','4','8','7','3','10'};
   Set  <Integer> setOfIntegers  = new Set<Integer>  {4,7,6,10};
   List <Integer> integerList    = new List<Integer> ();
- // нахождение максимального значения из списка
-            integer [] a = integerList; 
-      for  ( integer  i  = 0; i< a.size()-1; i++){          
-            if (    a[i] > a[i+1]){
-            integer temp = a[i];
-                    a[i] = a[i+1];
-                  a[i+1] = temp;
-       }
-       }
-          integer count1 = 0;
-	  integer count2 = 1;
-      for  (String s : listOfIntegers) // для каждого значения из списка стрингов
-	     {
-               integerList.add(Integer.valueOf(s)); // добавить как интеджер в список интеджеров
-       }
-      for  (Integer itemInteger : integerList) { // для каждого значения из списка интеджеров
-             if(integerList.contains(itemInteger)){ // если список интеджеров содержит каждое значение
- //считаем итерации для позиций          
-         count1++;           
+  // нахождение максимального значения из списка
+        integer [] a = integerList; 
+        for  ( integer  i  = 0; i< a.size()-1; i++){          
+            if     (  a[i] > a[i+1]){
+            integer temp   = a[i];
+                      a[i] = a[i+1];
+                    a[i+1] = temp;
+            }
+        }
+       integer count1 = 0;
+       integer count2 = 1;
+         for  (String s : listOfIntegers){
+               integerList.add(Integer.valueOf(s)); 
+ 
+         }
+
+        for  (Integer itemInteger : integerList) {   // для каждого значения из списка интеджеров
+             if(integerList.contains(itemInteger)) { // если список интеджеров содержит каждое значение
+             
+  //считаем итерации для позиций          
+    count1++;           
              System.debug('Элемент: ' + itemInteger + ' Позиция в списке : ' + (count1-1));
                           
-        }  
+             } 
              if(setOfIntegers.contains(itemInteger) && itemInteger <= a[a.size()-1]) {
              System.debug('Элемент листа входит в список сета!'+' Ухты, уже аж '+ count2 +' значений нашли!');
-                 count2++;
-        }    
-                else {
-    	     System.debug('Элемент : ' +itemInteger + ' не входит в лист! ');
-        }     
+    count2++;
+             }    
+                          else {
+                                System.debug('Элемент : ' +itemInteger + ' не входит в лист! ');
+                          }     
+          
         }
+      System.debug('Максимальное значение в листе : ' +a[a.size()-1]);
