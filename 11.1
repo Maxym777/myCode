@@ -17,17 +17,14 @@
        }
       for  (Integer itemInteger : integerList) { // для каждого значения из списка интеджеров
              if(integerList.contains(itemInteger)){ // если список интеджеров содержит каждое значение
-             
  //считаем итерации для позиций          
          count1++;           
              System.debug('Элемент: ' + itemInteger + ' Позиция в списке : ' + (count1-1));
-             
-                            
-        }
+       }
              if(setOfIntegers.contains(itemInteger) && itemInteger <= a[a.size()-1]) {
              System.debug('Элемент листа входит в список сета!');
-        }    
+       }    
                 else {
     	     System.debug('Элемент : ' +itemInteger + ' не входит в лист! ');
-        }     
-        }
+       }     
+       }
