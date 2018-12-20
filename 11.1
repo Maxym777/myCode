@@ -20,11 +20,13 @@
  //считаем итерации для позиций          
          count1++;           
              System.debug('Элемент: ' + itemInteger + ' Позиция в списке : ' + (count1-1));
-       }
+                          
+        }  
              if(setOfIntegers.contains(itemInteger) && itemInteger <= a[a.size()-1]) {
-             System.debug('Элемент листа входит в список сета!');
-       }    
+             System.debug('Элемент листа входит в список сета!'+' Ухты, уже аж '+ count2 +' значений нашли!');
+                 count2++;
+        }    
                 else {
     	     System.debug('Элемент : ' +itemInteger + ' не входит в лист! ');
-       }     
-       }
+        }     
+        }
